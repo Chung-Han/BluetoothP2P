@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ckstudent</string>
+    <string name="action_settings">Settings</string>
+    <string name="attendance">點名</string>
+    <string name="create">開放點名</string>
+    <string name="tour">導覽</string>
+    <string name="association">社團</string>
+    <string name="teacher">導生</string>
+    <string name="account">StudentID</string>
+    <string name="password">Password</string>
+    <string name="register">註冊</string>
+    <string name="login">登入</string>
+    <string name="turnon">開放中</string>
+    <string name="home">首頁</string>
+    <string name="passlock">密碼</string>
+    <string name="gesture">圖形</string>
+    <string name="move">晃動</string>
+    <string name="none">無</string>
+    <string name="selecttitle">選擇上鎖方式</string>
+    <string name="setpass">設定密碼(最多10碼)</string>
+    <string name="passagain">再輸入一次</string>
+    <string name="check">確定</string>
+    <string name="cancel">取消</string>
+    <string name="label_me">My Device</string>
+    <string name="label_peers">Device</string>
+    <string name="empty_message">No devices found. Turn on wifidirect and perform discovery</string>
+    <string name="p2p_off">請檢查Wifi-Direct設備選項</string>
+
+</resources>
