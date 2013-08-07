@@ -2,7 +2,9 @@ package com.android.ckstudent;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.wifi.p2p.WifiP2pManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 
@@ -17,12 +19,17 @@ public class MenuActivityS extends Activity {
 		Button btn3 = (Button)this.findViewById(R.id.button3);
 		Button btn4 = (Button)this.findViewById(R.id.button4);
 		
-		//change to wifidirectactivity
+		//change to WiFiStudentActivity
 		btn1.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent();
-				intent.setClass(MenuActivityS.this, WifiDirectActivity.class);
+				//check WiFi p2p enabled
+				int state = intent.getIntExtra(WifiP2pManager.EXTRA_WIFI_STATE, -1);
+	            if (state != WifiP2pManager.WIFI_P2P_STATE_ENABLED) {
+	            	startActivity(new Intent(Settings.ACTION_WIRELESS_SETTINGS));
+	            }
+				intent.setClass(MenuActivityS.this, WiFiStudentActivity.class);
 				MenuActivityS.this.startActivity(intent);
 			}
 		});

@@ -20,18 +20,19 @@ public class LoginActivity extends Activity {
 		Button btn2 = (Button)this.findViewById(R.id.button2);
 		final EditText edt1 = (EditText)this.findViewById(R.id.editText1);
 		final EditText edt2 = (EditText)this.findViewById(R.id.editText2);
+		String type;
 		
 		btn1.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent();
 				
-				if (edt1.getEditableText().toString() == "NULL") {
-					alertDialog(LoginActivity.this,"帳號錯誤","請輸入帳號");
+				if (edt1.getEditableText().toString() == "" || edt2.getEditableText().toString() == "") {
+					alertDialog(LoginActivity.this,"不可空白","請輸入帳號");
 				}
-				else if (edt2.getEditableText().toString() == "NULL") {
-					alertDialog(LoginActivity.this,"密碼錯誤","請輸入密碼");
-				}
+				
+				//Get data from database
+				
 				/*
 				else if (與資料庫比對) {
 					//找不到相符資料

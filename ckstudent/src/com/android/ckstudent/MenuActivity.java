@@ -22,7 +22,7 @@ public class MenuActivity extends Activity {
 			public void onClick(View v) {
 				Intent intent = new Intent();
 				
-				intent.setClass(MenuActivity.this, SelectActivity.class);
+				intent.setClass(MenuActivity.this, WiFiTeacherActivity.class);
 				MenuActivity.this.startActivity(intent);
 				//MenuActivity.this.finish();
 			}

@@ -3,20 +3,28 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
-    <TextClock
-        android:id="@+id/textClock1"
+    <LinearLayout
+        android:id="@+id/container_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:orientation="vertical"/>
+    
+    <AnalogClock
+        android:id="@+id/analogClock1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="90dp"
-        android:textSize="50sp" />
+        android:textSize="55sp"/>
 
+    
     <Button
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textClock1"
+        android:layout_below="@+id/analogClock1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="14dp"
         android:height="80dp"
@@ -31,6 +39,16 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="25dp"
         android:layout_marginRight="40dp"
-        android:text="@string/home" />
+        android:text="@string/end" />
+    
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="40dp"
+        android:text="@string/list" />
 
 </RelativeLayout>
