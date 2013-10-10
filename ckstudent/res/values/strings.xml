@@ -29,6 +29,18 @@
     <string name="p2p_off">請檢查Wifi-Direct設備選項</string>
     <string name="list">名單</string>
     <string name="success">Success！！</string>
-    <string name="waiting">Waiting...</string>
+    <string name="waiting">Waiting</string>
+    <string name="startcall">開始點名</string>
+    <string name="endcall">結束點名</string>
+    <string name="festivalname">活動名稱</string>
+    <string name="festivaldate">活動時間</string>
+    <string name="festivalplace">活動地點</string>
+    <string name="festivalcontent">活動內容</string>
+    <string name="festival">活動資訊</string>
+    <string name="favorite">收藏</string>
+    <string name="clubname">社團名稱</string>
+    <string name="clubtime">社課時間</string>
+    <string name="clubplace">社課地點</string>
+    <string name="clubfestival">近期活動</string>
 
 </resources>

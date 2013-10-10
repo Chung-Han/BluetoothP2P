@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="17" />
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
 
     <uses-permission
         android:required="true"
@@ -24,7 +24,6 @@
     <uses-feature android:name="android.hardware.wifi.direct" android:required="true"/>
     
     <application
-        android:name="GlobalData"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -37,7 +36,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="WiFiTeacherActivity"></activity>
+        <activity android:name="SelectListActivity"></activity>
+        <activity android:name="CallActivity"></activity>
+        <activity android:name="AssociationActivity"></activity>
+        <activity android:name="AssociationFragment1"></activity>
+        <activity android:name="AssociationFragment2"></activity>
+        <activity android:name="AssociationFragment3"></activity>
+        <activity android:name="FestivalContent"></activity>
+        <activity android:name="ClubContent"></activity>
     </application>
 
 </manifest>

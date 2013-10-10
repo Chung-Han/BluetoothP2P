@@ -15,6 +15,7 @@ public class MenuActivity extends Activity {
 		setContentView(R.layout.activity_menu);
 		
 		Button btn1 = (Button)this.findViewById(R.id.button1);
+		Button btn4 = (Button)this.findViewById(R.id.button4);
 		
 		//¤Á´«activity
 		btn1.setOnClickListener(new View.OnClickListener() {
@@ -22,12 +23,22 @@ public class MenuActivity extends Activity {
 			public void onClick(View v) {
 				Intent intent = new Intent();
 				
-				intent.setClass(MenuActivity.this, WiFiTeacherActivity.class);
+				intent.setClass(MenuActivity.this, SelectListActivity.class);
 				MenuActivity.this.startActivity(intent);
 				//MenuActivity.this.finish();
 			}
 		});
 		
+		btn4.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent();
+				
+				intent.setClass(MenuActivity.this, AssociationActivity.class);
+				MenuActivity.this.startActivity(intent);
+				//MenuActivity.this.finish();
+			}
+		});
 	}
 
 	@Override

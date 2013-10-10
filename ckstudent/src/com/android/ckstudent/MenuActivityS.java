@@ -29,7 +29,7 @@ public class MenuActivityS extends Activity {
 	            if (state != WifiP2pManager.WIFI_P2P_STATE_ENABLED) {
 	            	startActivity(new Intent(Settings.ACTION_WIRELESS_SETTINGS));
 	            }
-				intent.setClass(MenuActivityS.this, WiFiStudentActivity.class);
+				intent.setClass(MenuActivityS.this, CallActivity.class);
 				MenuActivityS.this.startActivity(intent);
 			}
 		});
