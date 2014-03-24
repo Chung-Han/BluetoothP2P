@@ -12,12 +12,11 @@ import android.widget.TextView;
 public class FestivalAdapter extends BaseAdapter {
 	ArrayList<Festival> festivals;
 	Context context;
-	
+	//Constructor
 	FestivalAdapter(Context context, ArrayList<Festival> festivals) {
 		this.context = context;
 		this.festivals = festivals;
 	}
-
 	@Override
 	public int getCount() {
 		return festivals.size();
@@ -30,7 +29,6 @@ public class FestivalAdapter extends BaseAdapter {
 	public long getItemId(int position) {
 		return position;
 	}
-
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -38,11 +36,12 @@ public class FestivalAdapter extends BaseAdapter {
 		if (convertView == null) {
 				view = inflater.inflate(R.layout.row_festival, null);
 				TextView textView = (TextView) view.findViewById(R.id.festival_name);
+				//Set name and date in text.
 				textView.setText(festivals.get(position).name);
 				textView = (TextView) view.findViewById(R.id.festival_date);
 				textView.setText(festivals.get(position).date);
 			} else {
-				view = (View) convertView;
+				view = (View)convertView;
 			}
 			return view;
 	}

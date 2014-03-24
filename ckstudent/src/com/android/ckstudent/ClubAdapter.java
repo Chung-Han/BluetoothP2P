@@ -12,11 +12,11 @@ import android.widget.TextView;
 public class ClubAdapter extends BaseAdapter {
 	ArrayList<Club> clubs;
 	Context context;
+	//Constructor
 	ClubAdapter(Context context, ArrayList<Club> clubs) {
 		this.context = context;
 		this.clubs = clubs;
 	}
-	
 	@Override
 	public int getCount() {
 		return clubs.size();
@@ -36,10 +36,11 @@ public class ClubAdapter extends BaseAdapter {
 		View view;
 		if (convertView == null) {
 				view = inflater.inflate(R.layout.row_club, null);
+				//Set association name to text.
 				TextView textView = (TextView) view.findViewById(R.id.club_name);
 				textView.setText(clubs.get(position).name);
 			} else {
-				view = (View) convertView;
+				view = (View)convertView;
 			}
 			return view;
 	}
